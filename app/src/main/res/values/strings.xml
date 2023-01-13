@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Todo Manager</string>
+    <string name="google_ic">google_Ic</string>
+    <string name="todo_">TODO</string>
+    <string name="task_to_be_done">Task to be done!</string>
+</resources>

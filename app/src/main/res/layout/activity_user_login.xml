@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".UserLoginPage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/val_20dp"
+        android:paddingTop="@dimen/val_40dp"
+        android:paddingEnd="@dimen/val_40dp"
+        android:paddingBottom="@dimen/val_20dp"
+        android:background="?attr/colorPrimaryContainer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/val_50dp"
+                android:text="@string/todo_"
+                android:paddingEnd="@dimen/val_10dp"
+                android:textSize="@dimen/val_40sp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <ImageView
+                android:layout_width="@dimen/val_50dp"
+                android:layout_height="@dimen/val_50dp"
+                android:src="@drawable/todo_ic"/>
+
+
+        </LinearLayout>
+
+       <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_to_be_done"
+            android:gravity="bottom"
+            android:textSize="@dimen/val_30sp"
+            android:fontFamily="@font/poppins_bold"/>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signInWithGoogle"
+        android:layout_width="@dimen/val_40dp"
+        android:layout_height="@dimen/val_40dp"
+        app:cardCornerRadius="@dimen/val_90dp"
+        app:cardElevation="@dimen/val_5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/val_10dp"
+            android:src="@drawable/google_ic"
+            android:contentDescription="@string/google_ic" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
